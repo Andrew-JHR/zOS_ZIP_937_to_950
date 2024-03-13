@@ -6,17 +6,19 @@ For a most current version of Info-ZIP's Zip source code, please refer to https:
 
 The license of Info-ZIP's Zip is at https://infozip.sourceforge.net/license.html 
 
-This tool can be used for any z/OS shop whose CCSID is the double-byte 937 code, or Traditional Chinese character code set, in particular.
+This tool can be used for any z/OS shop, in particular, whose CCSID is the double-byte 937 code, or Traditional Chinese character code set. 
 By using the argument: '-a', the text source data's EBCDIC single bytes and 937 double bytes will be translated into ASCII and 950 (Big5) respectively during the zipping process.
 
 Updated files:
 1. ZIPUP.C
    Code was updated to support DBCS code conversion: Shift-in: 0x0e and Shift-out: 0x0f are used to determine if a block of bytes is Single or Double.
    Including a new header: dbcsh2p.h 
+   
    #ifdef MVS
    #include "dbcsh2p.h"
       char odd = 'N'   ;   /* andrewj incomplete dbcs*/
    #endif /* ?MVS */
+   
 2. ZIP.C
    A small change: 'printf("Translating to ASCII or BIG5 if any...\n");' to indicate that there is also DBCS code conversion.  
     
