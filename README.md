@@ -41,7 +41,10 @@ REXX file:
 1. ZIPPDS.REXX can be used to zip a bunch of PDS data sets:
    '%XX ANDREWJ.SOURCE ASM EXEC JCL COB MAC PLI C' means to zip all together ANDREWJ.SOURCE.ASM/ANDREWJ.SOURCE.EXEC/ANDREWJ.SOURCE.JCL/ANDREWJ.SOURCE.COB/
    ANDREWJ.SOURCE.MAC/ANDREWJ.SOURCE.PLI/ANDREWJ.SOURCE.C.  
-   
+
+LineEnd_From_0A_To_0D0A_In_Zipped_File.py:
+This Python script can be used to convert all Line-End marks: 0x0a into 0x0d0a to be compliant with the convention of Windows while chaning the file extention name at the same time in the newly created zipped file.    
+
 Sampe list:
 1. LSTSEQ.JCL is the sample file for use with both CHK0E0F and ZIP.
 
