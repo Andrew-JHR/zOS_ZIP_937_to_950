@@ -44,7 +44,7 @@ REXX file:
 
 LineEnd_From_0A_To_0D0A_In_Zipped_File.py: 
 
-This Python script can be used to convert all Line-End marks: 0x0a into 0x0d0a to be compliant with the convention of Windows while chaning the file extention name at the same time in the newly created zipped file.    
+This Python script can be used to convert all Line-End marks: 0x0a into 0x0d0a so the convention of Windows is maintained while chaning the file extention name at the same time in the newly created zipped file.    
 
 Sampe list:
 1. LSTSEQ.JCL is the sample file for use with both CHK0E0F and ZIP.
